@@ -34,40 +34,52 @@ body {
   line-height: 1;
 }
 
-:root{
-  --primary-color:red;
-}
-.box{
-  width: 100px;
-  height: 100px;
-  margin: 30px;
-  background-color: red;
-  cursor: pointer;
-  /* không nhìn thấy những vẫn có thể nhấn được */
-  opacity: 0;
- /* không nhìn thấy , không nhấn vô được*/
-  visibility: hidden;
-  /*biến mất luôn */
-  display: none;
-}
-.shadow{
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-  background-color: black;
-  box-shadow:rgba(225, 18, 4) -4px 0px 6px 7px;
+
+ul{
+  font-size: 30px;
+  font-weight: bold;
+  margin: 40px;
 }
 
-.var{
-  --primary-color:#2cccff;
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-  margin-top: 50px;
-  background-color:var(--primary-color);
+li:first-child{
+  color:red;
+}
+li:last-child{
+  color:blue;
+}
+li:nth-child(2){
+  color: green;
+}
+li:nth-child(3){
+  color:pink;
+}
+li:nth-last-child(2){
+  color: orange;
+}
+li:not(:first-child){
+  color: purple;
+}
+li:not(:last-child){
+  color: aqua;
 }
 
+li:nth-child(odd){
+  color: red;
+}
+li:nth-child(even){
+  color: blue;
+}
+/*
+first-child
+first-oftype
+*/
 
-
-
-
+a[href^="https"]{
+  color: red;
+}
+a[href$="vn"]{
+  color: green;
+}
+a[href*="www"]{
+  color: blueviolet;
+}

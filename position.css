@@ -1,0 +1,161 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+:root{
+    font-size: 62.5%;
+}
+
+.wrapper{
+    width: 400px;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+.box1{
+    height: 400px;
+    background-color: red;
+}
+.box2{
+    height: 150px;
+    width: 350px;
+    background-color: blue;
+    position: absolute;
+    left: 25px;
+    bottom: 30px;
+    border-radius: 50px;
+
+}
+
+
+.box3{
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    position: relative;
+    background-color: blue;
+}
+.box3::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: red;
+    transform: rotateZ(90deg) translateX(50px);
+}
+.box4{
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    position: relative;
+    background-color: blue;
+}
+.box4::before{
+    content: "";
+    position: absolute;
+    width: calc(100% * 1.41);
+    height: 5px;
+    background-color: red;
+    transform: rotate(45deg) translateY(49px) translateX(20px);
+}
+.box5{
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    position: relative;
+    background-color: blue;
+}
+.box5::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: red;
+    transform: translateY(50px);
+}
+.wrapper-box{
+    display: flex;
+}
+
+.father{
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 4rem;
+    background-color: red;
+}
+.child{
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top: 32.5%;
+    left: 35%;
+    background-color: yellow;
+}
+.messenger{
+    width: 8rem;
+    height: 8rem;
+    background-color: blue;
+    position: fixed;
+    top: 50%;
+    left: 90%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.messenger:hover{
+    background-color: green;
+}
+h1{
+    background: linear-gradient(45deg, #ff0000, #ff7300, #ffeb00, #47ff00, #00ffee, #0044ff, #9b00ff);
+    -webkit-background-clip: text;
+    background-clip:text;
+    color:transparent;
+    display: inline;
+}
+/* div:first-of-type{
+    margin-top: 4rem;
+    text-align: center;
+    background-color: #00ffee;
+} */
+
+
+
+
+
+
+
+
